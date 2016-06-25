@@ -1,0 +1,31 @@
+{
+  "name": "player",
+  "version": "1.0.0",
+  "engines": {
+    "node": "0.12.7"
+  },
+  "description": "user interface to add users with specific roles",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install && gulp build",
+    "start": "node server.js"
+  },
+  "author": {
+    "name": "Fahd Sheikh",
+    "email": "fahdnsheikh@gmail.com",
+    "url": "http://fahdsheikh.com/"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "bower": "^1.5.3",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-sass": "^2.0.4",
+    "mongodb": "^2.0.45",
+    "mongoose": "^4.1.11",
+    "request": "^2.65.0"
+  }
+}

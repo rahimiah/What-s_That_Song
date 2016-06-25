@@ -1,0 +1,25 @@
+<div ng-hide= "home.overlay" class="overlay" ng-model="home.name">
+<div class="bg"></div>
+<div class="logo"><hr class="dash"></span><br><span class="whatsthat">WHAT'S THAT</span><br><span class="song">song</span><br>
+  
+  <div class="ng-hide" ng-hide="home.searchBar" id="search">
+    <form ng-submit="home.submit(home.lyrics)"/>
+        <input type="text" autofocus="autofocus" ng-model="home.lyrics"required="string"/>
+        <button type="submit"></button>
+    </form>
+      <p class="about">enter a combination of artist, lyrics, and/or song title to look for a song to play!<br>
+      examples: <span class="example">"Set the cheetahs on the loose"</span>, <span class="example">"drake i got two mortgages, 30 million in total"
+     </p>
+  </div>
+
+  <div ng-hide="home.loader" class="loader"></div>
+
+</div>
+</div>
+
+<div class="videoPlayer" ng-hide="home.iframe">
+  <span ng-hide="home.refresh" id="refresh"><a onclick="window.location.reload(true)">Search again?</a></span>
+  <iframe type="text/html" allowfullscreen frameborder="0" ng-src="{{home.trustSrc(home.src)}}">
+  </iframe>
+</div>
+

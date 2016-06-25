@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="player">
+  <head>
+    <title>What's That Song</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='assets/styles.css'>
+    <link rel="shortcut icon" href="assets/img/kanye.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/kanye.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <ui-view></ui-view>
+
+    <!-- Vendor files-->
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--Client-side application files-->
+    <script src="app/config.js"></script>
+    <script src="app/home/home.js"></script>
+    <script defer src="app/models/services.js"></script>
+  </body>
+</html>
